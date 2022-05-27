@@ -3,7 +3,7 @@ s = turtle.getscreen()
 turtle.hideturtle()
 sent = "F"
 length = 250
-theta = 10
+theta = 25
 
 class Turt:
     t = turtle.Turtle()
