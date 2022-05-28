@@ -57,12 +57,21 @@ class LSystem:
 
         
 
-
+def generate(sent):
+    next = ''
+    for letters in sent:
+        if letters == 'F':
+            next += "FF+[+F-F-F]-[-F+F+F]"
+        else:
+            next += letters
+    return next
 
 
 turt = Turt()
 ls = LSystem()
-while True:
+i = 0
+while i < 2:
     turt.render()
     sent = ls.generate(sent)
     length /= 2
+    i += 1

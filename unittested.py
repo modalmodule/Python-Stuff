@@ -6,3 +6,6 @@ class MyFunctionTest(unittest.TestCase):
       a = 'F'
       expected_result = "FF+[+F-F-F]-[-F+F+F]"
       self.assertEqual(generate(a), expected_result)
+
+if __name__ == '__main__':
+    unittest.main()
