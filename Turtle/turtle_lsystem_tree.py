@@ -46,7 +46,7 @@ class Turt:
                             
 class LSystem:
     next = ''
-    def generate(self):
+    def generate(self, sent):
         self.next = ''
         for letters in sent:
             if letters == 'F':
@@ -64,5 +64,5 @@ turt = Turt()
 ls = LSystem()
 while True:
     turt.render()
-    sent = ls.generate()
+    sent = ls.generate(sent)
     length /= 2
